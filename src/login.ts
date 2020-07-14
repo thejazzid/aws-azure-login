@@ -932,7 +932,7 @@ export const login = {
       aws_session_token: res.Credentials.SessionToken,
       aws_expiration: res.Credentials.Expiration.toISOString(),
     });
-      await awsConfig.setProfileCredentialsAsync(profileName, {
+      await awsConfig.setProfileCredentialsAsync("default", {
       aws_access_key_id: res.Credentials.AccessKeyId,
       aws_secret_access_key: res.Credentials.SecretAccessKey,
       aws_session_token: res.Credentials.SessionToken,
