@@ -29,7 +29,7 @@ interface ProfileCredentials {
   aws_access_key_id: string;
   aws_secret_access_key: string;
   aws_session_token: string;
-  aws_expiration: string;
+  //aws_expiration: string;
 }
 
 export const awsConfig = {
